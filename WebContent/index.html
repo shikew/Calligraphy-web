@@ -1,0 +1,105 @@
+<span style="font-size:18px;"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+a{ text-decoration:none;border:1px solid #ccc; width:30px; height:30px; display:inline-block; line-height:30px; color:#ccc; text-align:center;}
+a:hover{border:1px solid #000;}
+#div1{border:1px solid #000; width:100px; height:100px;}
+#div2{border:1px solid #999; width:300px;
+height:150px; font-size:14px; display:none;}
+#red,#green,#blue{color:#fff;}
+#red{background:red;}
+#green{background:green;}
+#blue{background:blue;}
+</style>
+<script>
+window.onload = function(){
+		var oBtn1 = document.getElementById('btn1');
+		var oBtn2 = document.getElementById('btn2');
+		var oBtn3 = document.getElementById('btn3');
+		var oDiv1 = document.getElementById('div1');
+		var oDiv2 = document.getElementById('div2');
+		var oRed = document.getElementById('red');
+		var oGreen = document.getElementById('green');
+		var oBlue = document.getElementById('blue');
+		var o2 = document.getElementById('2');
+		var o3 = document.getElementById('3');
+		var o4 = document.getElementById('4');
+		var o5 = document.getElementById('5');
+		var o6 = document.getElementById('6');
+		var o7 = document.getElementById('7');
+		oBtn1.onclick = function(){
+			oDiv2.style.display = "block";
+			oRed.onclick = function(){
+				oDiv1.style.background = "red";
+				oRed.style.background = "red";
+				}
+				oGreen.onclick = function(){
+				oDiv1.style.background = "green";
+				oRed.style.background = "green";
+				}
+				oBlue.onclick = function(){
+				oDiv1.style.background = "blue";
+				oRed.style.background = "blue";
+				}
+				o2.onclick = function(){
+					oDiv1.style.width = "200px";
+					}
+				o3.onclick = function(){
+					oDiv1.style.width = "300px";
+				    }
+				o4.onclick = function(){
+					oDiv1.style.width = "400px";
+					}
+				o5.onclick = function(){
+					oDiv1.style.height = "200px";
+					}
+				o6.onclick = function(){
+					oDiv1.style.height = "300px";
+					}
+				o7.onclick = function(){
+					oDiv1.style.height = "400px";
+					}
+			}
+		oBtn2.onclick = function(){
+			oDiv1.style.background = "none";
+			oDiv1.style.width = "100px";
+			oDiv1.style.height= "100px";
+			}
+		oBtn3.onclick = function(){
+			oDiv2.style.display = "none";
+			}
+		
+	
+	}
+</script>
+ 
+</head>
+ 
+<body>
+<div  >
+请设置下面的div样式:<input type="button" id="btn1" value="点击设置样式" />
+<div id="div1" >
+</div>
+<div id="div2">
+	<div class="list">请选择颜色样式:
+    <a href="javascript:;" id="red">红</a>
+    <a href="javascript:;" id="green">绿</a>
+    <a href="javascript:;" id="blue">蓝</a>
+    <div class="list">请选择宽:
+    <a href="javascript:;" id="2">200</a>
+    <a href="javascript:;" id="3">300</a>
+    <a href="javascript:;" id="4">400</a>
+    <div class="list">请选择高:
+    <a href="javascript:;" id="5">200</a>
+    <a href="javascript:;" id="6">300</a>
+    <a href="javascript:;" id="7">400</a><br />
+    <input type="button" id="btn2" value="恢复" />
+    <input type="button" id="btn3" value="确定" />
+</div>
+</div>
+</body>
+</html>
+</span>
